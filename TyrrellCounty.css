@@ -1,0 +1,114 @@
+#hamnav {
+    width: 100%;
+    background: #206ba4;
+  }
+  
+  #menu { display: flex; }
+  #menu a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #menu a:hover { background: #96969b; }
+  
+  #hamnav label, #hamburger { display: none; }
+
+@media screen and (max-width: 768px){
+    #menu a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+   
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #206ba4;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    #menu { display: none; }
+    #hamnav input:checked ~ #menu { display: block; }
+  }
+
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 100%;
+   
+  }
+
+  img{
+    width: 100%;
+    height: auto;}
+
+    footer{
+        background-color: #206ba4;
+        text-align: center;
+        color: aliceblue;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin: 1%;
+      }
+    
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; 
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+  }
+  
+
+  label {
+    display: block; 
+    margin-bottom: 8px; 
+  }
+
+.contact{
+text-align: center;
+  }
+
+
+.imgparent3{
+  display: grid;
+  grid-template-columns: auto auto auto; 
+}
+.imgchild3{
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    background-color: #96969b;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  p, h1 ,h2, h5, th {
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
